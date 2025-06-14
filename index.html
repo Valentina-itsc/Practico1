@@ -15,10 +15,11 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#nosotros">Sobre Nosotros</a></li>
-            <li><a href="#clientes">Clientes</a></li>
-            <li><a href="#contacto">Contactanos</a></li>
+            <li><a href="#" onclick="mostrarSeccion('home')">Inicio</a></li>
+            <li><a href="#" onclick="mostrarSeccion('nosotros')">Sobre Nosotros</a></li>
+            <li><a href="#" onclick="mostrarSeccion('productos')">Productos</a></li>
+            <li><a href="#" onclick="mostrarSeccion('clientes')">Clientes</a></li>
+            <li><a href="#" onclick="mostrarSeccion('contacto')">Contactanos</a></li>
         </ul>
     </nav>
     <section id="home">
@@ -29,21 +30,22 @@
         <h2>Sobre Nosotros</h2>
         <p>Somos un equipo dedicado a diseñar y confeccionar prendas espectaculares para que luzcas tu mejor versión</p>
         </section>
+    <section id="productos">
+            <h2>Productos</h2>
+            <p>Próximamente...</p>
+    </section>
     <section id="clientes">
         <h2>Clientes</h2>
         <p>¡Conocé a nuestros clientes estrella!</p>
         <ul>
-            <li>Martina - Influencer de moda</li>
-            <p>"Flash Clothing es un excelente aliado para quienquiera encandilar con su look!!"</p>
-            <li>Lucas - Estudiante de moda</li>
-            <p >"Flash Clothing fue el empujoncito que necesitaba para arrancar a estudiar lo que más me gusta"</p>
-            <li>Camila - Diseñadora emergente</li>
-            <p>"Flash Clothing me ayudó a dar a conocer mis diseños y a crecer profesionalmente (además, me encantan las prendas que tienen)"</p>
+        <p>"Flash Clothing es un excelente aliado para quienquiera encandilar con su look!!"</p>
+        <p>Martina - Influencer de moda</p>
+        <p >"Flash Clothing fue el empujoncito que necesitaba para arrancar a estudiar lo que más me gusta"</p>
+        <p>Lucas - Estudiante de moda</p>
+        <p>"Flash Clothing me ayudó a dar a conocer mis diseños y a crecer profesionalmente (además, me encantan las prendas que tienen)"</p>
+        <p>Camila - Diseñadora emergente</p>
+        
         </ul>
-        <section id="productos">
-            <h2>Productos</h2>
-            <p>Próximamente...</p>
-            </div>
     </section>
     <section id="contacto">
         <h2>Contacto</h2>
@@ -65,7 +67,7 @@
                 <label for="especificar">Especifique:</label>
                 <textarea id="especificar"></textarea>
             </div>
-            <label for="mensaje">Mensaje:</label>
+            <label for="mensaje">¿Cuál?:</label>
             <textarea id="mensaje" required></textarea>
             <button type="submit">Enviar</button>
         </form>
@@ -73,6 +75,6 @@
     <footer>
         <p>© 2025 Flash Clothing. Todos los derechos reservados.</p>
         </footer>
-    <script src="js/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
