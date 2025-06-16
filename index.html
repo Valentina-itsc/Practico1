@@ -51,24 +51,30 @@
         <h2>Contacto</h2>
         <p>¿Tenés alguna consulta? ¡Escribinos!</p>
         <form id="formulario-contacto">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" required>
-            <label for="mensaje">¿Cómo te enteraste de nuestra empresa?</label>
-            <select id="mensaje" required onchange="mostrarEspecificar()">
-                <option value="" disabled selected>Selecciona una opción</option>
-                <option value="redes">Redes Sociales</option>
-                <option value="recomendacion">Recomendación de un amigo</option>
-                <option value="publicidad">Publicidad</option>
-                <option value="otro">Otro</option>
-            </select>
-            <div id="especificar" style="display:none;">
-                <label for="especificar">Especifique:</label>
-                <textarea id="especificar"></textarea>
+            <div class="preguntas">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre">
             </div>
-            <label for="mensaje">¿Cuál?:</label>
-            <textarea id="mensaje" required></textarea>
+            <div class="preguntas">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo">
+            </div>
+            <div class="preguntas">
+                <label for="pregunta">¿Cómo te enteraste de nuestra empresa?</label>
+                <select id="pregunta" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="redes">Redes Sociales</option>
+                    <option value="recomendacion">Recomendación de un tercero</option>
+                    <option value="publicidad">Publicidad</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="preguntas escondida" id="otraOpcion">
+                <label for="cual">¿Cuál?</label>
+                <textarea id="cual"></textarea>
+            </div>
+            <label for="mensaje">¿Querés dejarnos un mensaje?:</label>
+            <textarea id="mensaje"></textarea>
             <button type="submit">Enviar</button>
         </form>
         </section>
