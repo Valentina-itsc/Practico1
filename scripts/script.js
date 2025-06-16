@@ -3,20 +3,20 @@ function mostrarAlerta() {
 }
 
 function mostrarSeccion(id) {
-    // Oculta todas las secciones
+    /*Oculta todas las secciones*/
     const secciones = document.querySelectorAll('section');
     secciones.forEach(sec => {
         sec.style.display = "none";
     });
 
-    // Muestra la sección seleccionada
+    /*Muestra la sección actuva*/
     const activa = document.getElementById(id);
     if (activa) {
         activa.style.display = "block";
     }
 }
 
-// Va a mostrar esto cuando cargue la pagina (la alerta y home)
+/*Va a mostrar esto cuando cargue la pagina (la alerta y home)*/
 window.onload = function () {
     mostrarAlerta();
     mostrarSeccion("home");
@@ -35,3 +35,10 @@ window.onload = function () {
         }
     });
 };
+
+/*alerta cuando se hace click en el boton*/
+
+const boton = document.getElementById("boton");
+boton.addEventListener("click", function () {
+    alert("¡Mensaje enviado!");
+});
