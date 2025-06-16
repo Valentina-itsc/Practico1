@@ -110,7 +110,7 @@ footer{
 
 /*query para diseño responsivo*/
 
-/* PC */
+/*PC*/
 @media (min-width: 1024px) {
     nav ul {
         flex-direction: row;
@@ -124,24 +124,26 @@ footer{
     }
 }
 
-/* Tablet */
+/*Tablet*/
 @media (min-width: 600px) and (max-width: 1023px) {
     nav ul {
         flex-direction: row;
         gap: 60px;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
     }
     header h1 {
-        font-size: 4em;
+        font-size: 3.5em;
     }
     section{
-        padding: 30px 40px;
+        padding: 30px 30px;
     }
     form {
-        padding: 15px;
+        padding: 20px;
     }
 }
-/* Celular */
+/*Celular*/
 @media (max-width: 599px) {
     nav ul {
         flex-direction: column;
@@ -164,4 +166,10 @@ form textarea {
 }
 nav {
     padding: 5px;
+}
+
+/*Para que no salga el textarea de 'otro'*/
+
+.escondida {
+    display: none;
 }
